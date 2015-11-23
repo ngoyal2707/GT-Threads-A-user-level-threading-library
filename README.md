@@ -23,7 +23,6 @@ c) Inside scheduler, take the front element of steque out and add it to the end 
 
 **3) How to compile the library and run test program.**
 
-The probram and library work with the given makefile without change, I have tried it with the submission page on Udacity which uses the default makefile.
 
 The exact steps are as following:
 
@@ -37,7 +36,7 @@ c) include the gthread.h header file in your program and link it to the object f
 
 
 
-**4) How the deadlocks in your Dining Philosophers solution are prevented.**
+**4) How the deadlocks in Dining Philosophers solution are prevented.**
 	
 The dining philosopher will result into deadlock if all the philosopher tries to pick the same side chopstick first (all left or all right). To prevent the deadlock we have to break the order by changing the order of chopstick pickup for anyone of the philosopher. I have done it by picking up the larger number of chopstick for each of the philosopher. Thus if we number the chopsticks in incremental order in clockwise fashion then the philosopher number 0,1,2,3 will choose left chostick (1,2,3,4 accordingly) first but the last philosopher 4 will choose right chopstick (also 4) first. This will break the order and prevent deadlock. 
 
