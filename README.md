@@ -1,4 +1,4 @@
-h1 GT-Threads library 
+# GT-Threads library #
 
 The GT-Threads library provides the API for user level threading. It follows the API structure similar to pthread library on POSIX. It is intended for Unix users.
 
